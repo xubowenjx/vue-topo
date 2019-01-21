@@ -1,0 +1,72 @@
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.micro-topo {
+  .micro-topo-container {
+    text-align: center;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .node-name {
+    cursor: move;
+  }
+  .link {
+    stroke-linecap: round;
+    fill: rgba(255, 255, 255, 0);
+    border: #35a5e5 1px solid;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    animation: dash 6s linear infinite;
+  }
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 220;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .linkText {
+    display: inline-block;
+    padding: 6px;
+    font-family: SimSun;
+    fill: #eee;
+  }
+  .user {
+    cursor: move;
+    fill: #3890ff;
+  }
+  .user-content {
+    cursor: move;
+    fill: #217ef2;
+  }
+  .out {
+    cursor: move;
+    fill: #a330ec;
+  }
+  .out-title {
+    cursor: move;
+    fill: #9026d4;
+  }
+  .node {
+    cursor: move;
+    fill: rgba(75, 78, 85, 0.6);
+  }
+  .node-error {
+    cursor: move;
+    fill: rgba(75, 78, 85, 0.6);
+    stroke-width: 2;
+    stroke: rgba(226, 61, 61, 0.6);
+  }
+  .node-active {
+    .node {
+      stroke-width: 2;
+      stroke: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .node-title {
+    cursor: move;
+    fill: #4c4c4e;
+  }
+}
